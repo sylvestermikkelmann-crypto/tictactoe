@@ -24,8 +24,10 @@ Maalet er at bygge et spil med et gammeldags look: tydelige rammer, klassiske fa
 
 - 3x3 spillebraet
 - Spiller mod computer
+- Valg af hvem der starter
 - Statusfelt for tur, sejr og uafgjort
 - Knap til nyt spil
+- Resultattavle for sejre og remis
 - Retro visuel stil
 - Mobilvenligt layout
 
@@ -59,4 +61,6 @@ Projektet er forberedt til at blive lagt paa GitHub, men det kraever enten:
 
 ## Status
 
-Dokumentationsfilerne er oprettet. Selve spillet er endnu ikke implementeret.
+Spillet er implementeret i statiske filer og kan koeres lokalt i browseren.
+
+Lokal git er sat op med et foerste commit. GitHub remote og push afventer stadig en repository-URL.

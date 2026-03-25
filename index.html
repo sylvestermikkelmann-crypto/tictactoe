@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Kryds og Bolle</title>
+    <meta
+      name="description"
+      content="Spil kryds og bolle mod computeren i en gammeldags browser-oplevelse."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero-panel">
+        <p class="eyebrow">Salonspil fra en simplere tid</p>
+        <h1>Retro Kryds og Bolle</h1>
+        <p class="lead">
+          Traed op til det slidte braet, vaelg hvem der tager foerste traek, og se
+          om du kan overliste husets mekaniske modstander.
+        </p>
+      </header>
+
+      <main class="game-layout">
+        <section class="cabinet-panel control-panel">
+          <div class="panel-header">
+            <h2>Spilopsaetning</h2>
+            <span class="badge">Lokalt parti</span>
+          </div>
+
+          <div class="starter-controls" role="group" aria-label="Vaelg starter">
+            <button class="starter-button is-active" type="button" data-starter="human">
+              Du starter
+            </button>
+            <button class="starter-button" type="button" data-starter="ai">
+              Computeren starter
+            </button>
+          </div>
+
+          <div class="status-card">
+            <p class="status-label">Status</p>
+            <p id="status-message" class="status-message" aria-live="polite">
+              Din tur. Saet dit kryds.
+            </p>
+          </div>
+
+          <button id="reset-button" class="reset-button" type="button">
+            Start nyt spil
+          </button>
+
+          <div class="legend-card">
+            <h3>Spilleregler</h3>
+            <p>Du spiller som <strong>X</strong>. Computeren spiller som <strong>O</strong>.</p>
+            <p>Tre paa stribe vinder partiet. Fuldt braet uden vinder giver remis.</p>
+          </div>
+        </section>
+
+        <section class="cabinet-panel board-panel" aria-labelledby="board-title">
+          <div class="panel-header">
+            <h2 id="board-title">Spillebraet</h2>
+            <span class="badge badge-ink">Mekanisk modstander</span>
+          </div>
+
+          <div id="board" class="board" aria-label="Kryds og bolle braet">
+            <button class="cell" type="button" data-index="0" aria-label="Felt 1"></button>
+            <button class="cell" type="button" data-index="1" aria-label="Felt 2"></button>
+            <button class="cell" type="button" data-index="2" aria-label="Felt 3"></button>
+            <button class="cell" type="button" data-index="3" aria-label="Felt 4"></button>
+            <button class="cell" type="button" data-index="4" aria-label="Felt 5"></button>
+            <button class="cell" type="button" data-index="5" aria-label="Felt 6"></button>
+            <button class="cell" type="button" data-index="6" aria-label="Felt 7"></button>
+            <button class="cell" type="button" data-index="7" aria-label="Felt 8"></button>
+            <button class="cell" type="button" data-index="8" aria-label="Felt 9"></button>
+          </div>
+
+          <div class="scoreboard" aria-label="Resultattavle">
+            <article class="score-card">
+              <span class="score-label">Dine sejre</span>
+              <strong id="human-score" class="score-value">0</strong>
+            </article>
+            <article class="score-card">
+              <span class="score-label">Computer</span>
+              <strong id="ai-score" class="score-value">0</strong>
+            </article>
+            <article class="score-card">
+              <span class="score-label">Remis</span>
+              <strong id="tie-score" class="score-value">0</strong>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer-note">
+        Et lille browser-spil i papir, traet og maskinblik.
+      </footer>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>

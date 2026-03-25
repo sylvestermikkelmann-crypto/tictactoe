@@ -8,45 +8,51 @@
 
 ## Projektopsaetning
 
-- [ ] Initialiser git repository
-- [ ] Opret foerste commit
+- [x] Initialiser git repository
+- [x] Opret foerste commit
 - [ ] Kobl projektet til GitHub remote
 - [ ] Push til GitHub
 
 ## Frontend
 
-- [ ] Opret `index.html`
-- [ ] Opret `styles.css`
-- [ ] Opret `game.js`
+- [x] Opret `index.html`
+- [x] Opret `styles.css`
+- [x] Opret `game.js`
 
 ## UI og design
 
-- [ ] Lav retro layout med gammeldags look
-- [ ] Giv spillebraettet tydelige felter og hover states
-- [ ] Lav statuspanel for spillerens tur og resultat
-- [ ] Goer layoutet brugbart paa mobil og desktop
+- [x] Lav retro layout med gammeldags look
+- [x] Giv spillebraettet tydelige felter og hover states
+- [x] Lav statuspanel for spillerens tur og resultat
+- [x] Goer layoutet brugbart paa mobil og desktop
 
 ## Spil-logik
 
-- [ ] Implementer board-state
-- [ ] Implementer klik paa felter
-- [ ] Implementer turskifte
-- [ ] Implementer vinderkontrol
-- [ ] Implementer uafgjort
-- [ ] Implementer reset-knap
+- [x] Implementer board-state
+- [x] Implementer klik paa felter
+- [x] Implementer turskifte
+- [x] Implementer vinderkontrol
+- [x] Implementer uafgjort
+- [x] Implementer reset-knap
 
 ## Computer-modstander
 
-- [ ] Implementer computerens traek
-- [ ] Brug minimax eller tilsvarende sikker logik
-- [ ] Forhindre ugyldige traek
-- [ ] Opdater status korrekt efter AI-traek
+- [x] Implementer computerens traek
+- [x] Brug minimax eller tilsvarende sikker logik
+- [x] Forhindre ugyldige traek
+- [x] Opdater status korrekt efter AI-traek
 
 ## Test
 
-- [ ] Test sejr til spiller
-- [ ] Test sejr til computer
-- [ ] Test uafgjort
+- [x] Test sejr til spiller
+- [x] Test sejr til computer
+- [x] Test uafgjort
 - [ ] Test reset efter afsluttet spil
 - [ ] Test ugyldige klik
 - [ ] Test layout paa mobilbredde
+
+## Verificeret nu
+
+- [x] Lokal server svarer med `index.html`, `styles.css` og `game.js`
+- [x] AI vaelger vindertraek og blokeringstraek i logiktest
+- [x] Vinderdetektion og fuldt braet er testet i JS-runtime paa macOS
