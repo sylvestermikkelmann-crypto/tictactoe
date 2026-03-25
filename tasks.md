@@ -10,8 +10,8 @@
 
 - [x] Initialiser git repository
 - [x] Opret foerste commit
-- [ ] Kobl projektet til GitHub remote
-- [ ] Push til GitHub
+- [x] Kobl projektet til GitHub remote
+- [x] Push til GitHub
 
 ## Frontend
 
