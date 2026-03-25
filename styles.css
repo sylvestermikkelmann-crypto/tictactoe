@@ -155,6 +155,8 @@ h1 {
 .reset-button,
 .cell {
   font: inherit;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .starter-button,
@@ -345,31 +347,184 @@ h1 {
   .board-panel {
     order: 1;
   }
+
+  .hero-panel {
+    padding: 1.4rem clamp(1rem, 3vw, 2rem);
+    margin-bottom: 1rem;
+  }
+
+  .lead {
+    font-size: 0.95rem;
+    margin-top: 0.8rem;
+  }
 }
 
 @media (max-width: 620px) {
   .page-shell {
-    width: min(100% - 1rem, 1100px);
-    padding-top: 1rem;
+    width: min(100% - 0.75rem, 1100px);
+    padding-top: 0.75rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .hero-panel {
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero-panel::after {
+    inset: 6px;
+  }
+
+  .eyebrow {
+    margin-bottom: 0.5rem;
+    font-size: 0.72rem;
+  }
+
+  h1 {
+    font-size: clamp(1.6rem, 8vw, 2.4rem);
+  }
+
+  .lead {
+    display: none;
   }
 
   .hero-panel,
   .cabinet-panel {
-    border-radius: 18px;
+    border-radius: 16px;
+  }
+
+  .cabinet-panel {
+    padding: 1rem;
+  }
+
+  .cabinet-panel::after {
+    inset: 6px;
   }
 
   .panel-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 0.8rem;
   }
 
-  .starter-controls,
+  .panel-header h2 {
+    font-size: 1rem;
+  }
+
+  .board {
+    gap: 0.5rem;
+    padding: 0.65rem;
+    border-radius: 16px;
+  }
+
+  .cell {
+    border-radius: 12px;
+    font-size: clamp(2rem, 12vw, 3.2rem);
+    min-height: 0;
+    min-width: 0;
+  }
+
   .scoreboard {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .score-card {
+    padding: 0.6rem 0.4rem;
+    border-radius: 12px;
+  }
+
+  .score-label {
+    font-size: 0.68rem;
+  }
+
+  .score-value {
+    font-size: 1.3rem;
+    margin-top: 0.25rem;
+  }
+
+  .starter-controls {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+  }
+
+  .starter-button {
+    min-height: 2.8rem;
+    padding: 0.5rem;
+    font-size: 0.88rem;
+  }
+
+  .reset-button {
+    min-height: 3rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.92rem;
+  }
+
+  .status-card {
+    padding: 0.75rem;
+    margin-bottom: 0.75rem;
+    border-radius: 12px;
   }
 
   .status-message {
     min-height: 0;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+  }
+
+  .legend-card {
+    display: none;
+  }
+
+  .board-panel {
+    gap: 0.75rem;
+  }
+
+  .footer-note {
+    margin-top: 0.75rem;
+    font-size: 0.68rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-shell {
+    width: calc(100% - 0.5rem);
+    padding-top: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero-panel {
+    padding: 0.75rem;
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+  }
+
+  .cabinet-panel {
+    border-radius: 12px;
+    padding: 0.75rem;
+  }
+
+  .board {
+    gap: 0.35rem;
+    padding: 0.5rem;
+    border-radius: 12px;
+  }
+
+  .cell {
+    border-radius: 10px;
+    border-width: 2px;
+  }
+
+  .panel-header {
+    margin-bottom: 0.5rem;
+  }
+
+  .badge {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+    min-height: 1.6rem;
   }
 }
 
